@@ -1,0 +1,38 @@
+// Variable declaration
+let userName = "Alice";
+
+// Function definition
+fun greet: name {
+  print("Welcome, " + name);
+}
+
+// Class definition
+class User {
+  let name;
+  
+  fun User: name {
+    this.name = name;
+  }
+  
+  fun sayHello: {
+    greet(this.name);
+  }
+}
+
+// HTML embedding and CSS styling
+fun renderButton: {
+  html <button> "Click Here" </button>
+  
+  css {
+    "background-color: blue;";
+    "color: white;";
+    "font-size: 16px;";
+  }
+}
+
+// Main program
+fun main: {
+  let user = User("Alice");
+  user.sayHello();
+  renderButton();
+}
